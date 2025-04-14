@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulturaLive - Gestão de Eventos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+     <!-- Header com Logo -->
+     <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo do Projeto">
+        </div>
+        <!-- Menu Dropdown -->
+        <nav>
+            <ul class="nav-menu">
+               
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="eventos.html">Eventos</a></li>
+                    <li><a href="locais.html">Locais pra visitar</a></li>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                    <li><a href="atividade.html">Sua atividade</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                
+ 
+                   
+                    </ul>
+                    </nav>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="container">
+        <div class="kanban-board">
+            <!-- Coluna Pendente -->
+            <div class="kanban-column" id="pendente">
+                <h2>Pendente</h2>
+                <div class="kanban-card" draggable="true">
+                    <h3>Tour Histórico pelo Centro</h3>
+                    <p>Explore o centro da cidade e descubra sua história.</p>
+                </div>
+                <div class="kanban-card" draggable="true">
+                    <h3>Show de Música Eletrônica</h3>
+                    <p>Experimente a cultura da música eletrônica em um evento ao vivo.</p>
+                </div>
+            </div>
+
+            <!-- Coluna Em Progresso -->
+            <div class="kanban-column" id="emprogresso">
+                <h2>Em Progresso</h2>
+                <!-- Cards poderão ser arrastados para cá -->
+            </div>
+
+            <!-- Coluna Concluído -->
+            <div class="kanban-column" id="concluido">
+                <h2>Concluído</h2>
+                <!-- Cards poderão ser arrastados para cá -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

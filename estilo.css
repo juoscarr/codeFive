@@ -262,3 +262,75 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+
+
+
+
+
+
+/* Container do Kanban */
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Estilo da board */
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilo das colunas */
+.kanban-column {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    min-height: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kanban-column h2 {
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos cards */
+.kanban-card {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    transition: background-color 0.2s ease;
+}
+
+.kanban-card:hover {
+    background-color: #bbdefb;
+}
+
+.kanban-card h3 {
+    font-size: 1.2em;
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.kanban-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Efeito de borda durante o arrasto */
+.kanban-column.drag-over {
+    border: 2px dashed #1976d2;
+}
+
+
